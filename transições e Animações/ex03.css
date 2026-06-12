@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 15px solid ;
+    border-right: transparent 10px solid;
+    animation: processamento 1.5s ease-in-out infinite ;
+}
+@keyframes processamento{
+    0%{
+        transform: rotate(0deg);
+        border: 15px  dashed brown;
+        border-right: transparent 10px solid;
+    }
+      100%{
+        transform: rotate(360deg);
+        border: 15px  dashed rgb(42, 165, 91);
+        border-left: transparent 10px solid;
+    }    
+}

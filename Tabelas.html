@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid;
+            padding: 5px;
+            text-align: center;
+        }
+        caption{
+            background-color: blueviolet;
+            color: #f1f1f1;
+        }
+        tbody>tr:nth-child(1),tr:nth-child(3){
+            background-color: aquamarine;
+        }
+         tbody>tr:nth-child(6){
+            background-color: rgb(219, 175, 53);
+        }
+        div{
+            overflow-x: auto;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>Dados de uma família</caption>
+            <thead>
+                <tr>
+                    <th>Nomes</th>
+                    <th>Número de filhos</th>
+                    <th rowspan="3" colspan="6"> Nomes dos filhos</th>
+                    <th>Número de esposas</th>
+                    <th colspan="3">Nomes das esposas</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Mateus</td>
+                        <td rowspan="3">3</td>
+                        <td colspan="6">Ana</td>
+                        <td rowspan="3">2</td>
+                        <td rowspan="3" colspan="2">Carla</td>
+                        <td rowspan="3" colspan="2">Júlia</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Tatiana</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Francisca</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Guambe</td>
+                        <td rowspan="2">2</td>
+                        <td colspan="6">Kyla</td>
+                        <td rowspan="2">1</td>
+                        <td rowspan="2" colspan="3">Argentina</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Gil</td>
+                    </tr>
+                    <tr>
+                        <td>Vasco</td>
+                        <td>6</td>
+                        <td>Marta</td>
+                        <td>Flora</td>
+                        <td>Velia</td>
+                        <td>Wanga</td>
+                        <td>Sheila</td>
+                        <td>Ivone</td>
+                        <td>3</td>
+                        <td>Nélia</td>
+                        <td>Soráia</td>
+                        <td>Isabel</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

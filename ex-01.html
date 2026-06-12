@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-attachment: fixed;
+            background-image: linear-gradient(to left, rgb(0, 128, 107) , rgba(9, 7, 126, 0.521));
+            /*primeiro colocas a direcção e depois coloca uma virgula para separar as cores e a direcção.
+            temos o to left, que é para esquerda
+            to right para a direita
+            temos o to top, para cima e o to bottom para a parte de baixo */
+        }
+        div{
+            width: 100vw;
+            height: 40vw;
+            padding: 10px;
+            background-image: linear-gradient(to right, black 50%,white 50%);
+            /*quando colocas percentagem depois das cores elas passam a ter uma sapração recta diferente do padrão*/
+        }
+        body>div:nth-child(2){
+            background-image: linear-gradient(45deg,blue 50%,yellow 30% );
+            /* podemos usar tbm o reg e depois da virgula colocar a cor, ele ordena em graus*/
+        }
+        body>div:nth-child(3){
+            background-image: radial-gradient(circle, black 20%,rgb(253, 255, 253) 60%,black 20%)
+            /* o circle usamos para fazer uma mestura circular de cores*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        criando degradê 
+    </h1>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

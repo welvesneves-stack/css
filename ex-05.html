@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício-5</title>
+    <style>
+        body{
+            background-color: rgba(127, 206, 36, 0.699);
+        }
+        div{
+            min-height: 300px;
+            max-width: 300px;
+            display: flex;
+            padding: 20px;
+            background-color: blueviolet;
+            transition-duration: 0.9s;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        button{
+            height: 20px;
+            padding: auto;
+            border-radius: 20px;
+            border: none;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            visibility: hidden;
+        }
+
+        div:hover{
+            background-color: black;
+            border-radius: 1000px;
+            box-shadow: 0px 2px 0px 15px blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <button id="btn">Rolar</button>
+    </div>
+
+
+    <script>
+        let btn=document.getElementById("btn")
+        let div=document.getElementById("div")
+
+        div.addEventListener("mouseover",emcima)
+        btn.addEventListener("click",clicar)
+
+
+        function emcima(){
+            if(btn.style.visibility ==="hidden"){
+                btn.style.visibility ="visible";
+            }else{
+                btn.style.visibility ="hidden"
+            }
+        }
+
+        function clicar (){
+            div.style.translate = 200 + "px"
+        }
+    </script>
+
+</body>
+</html>
