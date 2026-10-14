@@ -1,220 +1,119 @@
-
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+main{
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+}
+#form{
+    border: none;
+    box-shadow: 0px 0px 3px rgb(153, 148, 231);
+    border-radius: 20px;
 }
 .container{
-    width: 650px;
-    height: 450px;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 9px #ccc;
-    overflow: hidden;
-    flex-wrap: wrap;
-    
-}
-.lado2{
     position: relative;
-    margin: 30px;
-    margin-left: 30px;
-    width: 325px;
-    padding: 30px;
-    overflow: hidden;
-    padding-right: -20px;
-    padding-bottom: 20px;
-}
-.entrar,.registrar{
-    position: absolute;
-}
-.registrar{
-    left: 100%;
-    margin-top: -30px;
-    padding: 20px;
-    
-}
-.entrar{
-    left: 0%;
-}
-
- .entrar h1{
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: blue;
-    text-align: center;
-}
-input{
-    width: 250px;
-    padding: 10px;
-    border-radius: 9px;
-    margin: 8px;
-    outline: none;
-    border: none;
-    background-color: #cccccc53;
-    box-shadow: 0px -1px 0px rgba(124, 118, 118, 0.753);
-}
-.entrar > div:nth-child(2)>a{
-    margin-left: -40px;
-}
-.entrar > div:nth-child(3)>a{
-    margin-left: -40px;
-}
-input:focus{
-    border: 3px solid blue;
-}
-.entrar button{
-    margin: 20px;
-    width: 100px;
-    padding: 3px;
-    margin-left: 30%;
-    background-color: blue;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.551);
-}
-.registrar > div:nth-child(8)>a>i{
-    margin: 22px;
-    border: 1px solid;
-    padding: 5px;
-    width: 25px;
-}
-.registrar > div:nth-child(8){
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -12px;
+    width: 370px;
+    gap: 7px;
 }
-.registrar p{
-    text-align: center;
-}
- .registrar h1{
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: blue;
-    text-align: center;
-}
-
-.registrar > div>a{
-    margin-left: -40px;
-}
-
-input:focus{
-    border: 3px solid blue;
-}
-.registrar button{
-    margin: 20px;
-    width: 100px;
-    padding: 3px;
-    margin-left: 30%;
-    background-color: blue;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.551);
-}
-.entrar > div:nth-child(6)>a>i{
-    margin-left: 30%;
-    margin: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-    border: 1px solid;
-    padding: 5px;
-    width: 25px;
-}
-.lado1{
+.azul{
     position: relative;
     background-color: blue;
-    width: 240px;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    padding-right: -20px;
-    padding: 20px;
+    width: 150px;
+    padding: 6px;
+    overflow: hidden;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.pergunta1{
     color: white;
-}
-.lado1 button{
-    margin: 20px;
-    width: 100px;
-    padding: 3px;
-    margin-left: 30%;
-    background-color: white;
-    border: none;
-    color: blue;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px rgba(245, 241, 241, 0.551);
-}
-.lado1 h1{
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-}
-.lado1 p{
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-    margin-top: 10px;
-    margin: 10px;
-    
-}
-.dir,.esq{
     position: absolute;
     top: 30%;
+    font-size: 16px;
 }
-.dir{
-    right: 100%;
-    margin: 30px;
+.pergunta2{
+    color: white;
+    position: absolute;
+    left: 100%;
+    top: 30%;
+    font-size: 16px;
 }
-.esq{
-    right: 0%;
-    margin: 30px;
+.btnazul{
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: blue;
+    margin-top: 30px;
 }
-.lado1 button:hover{
+.btnazul:hover{
     background-color: blue;
     color: white;
-    cursor: pointer;
-    border: 1px solid white;
-    transform: translatey(-2px);
+    border: 1px solid;
 }
-.lado2 button:hover{
-    background-color: white;
+.branco{
+    width: 220px;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+}
+.registrar{
+    position: absolute;
+    left: 100%;
+}
+input{
+    border: none;
+    background-color: rgba(169, 169, 169, 0.603);
+    height: 25px;
+    border-radius: 4px;
+    color: black;
+    width: 200px;
+    text-align: center;
+}
+label{
+    font-weight: bolder;
     color: blue;
-    cursor: pointer;
-    transform: translatey(-2px);
 }
-@media (max-width: 670px) {
-    .container{
-    width: 450px;
-    height: 700px;
+.iconeEcampo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1px;
 }
-.lado1{
-    width: 100%;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 60px;
-    height: 250px;
-    margin-bottom: -500px;
+.iconeEcampo>i{
+    margin-left: -30px;
+    margin-top: 5px;
 }
-.esq{
-    margin: 80px;
-    margin-top: 0;
+h2{
+    text-align: center;
 }
-.entrar{
-    margin-top: -30px;
+.esqueceuSenha{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.esqueceuSenha>button{
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 6px;
+}
+a{
+    color: blue;
+}
+.icones{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 4px;
+    font-size: 20px;
 }
